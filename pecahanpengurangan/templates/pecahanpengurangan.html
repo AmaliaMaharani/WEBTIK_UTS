@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="p-3 mb-2 bg-secondary text-white">
+    <h1><b><center>PECAHAN PENGURANGAN</center></b></h1>
+</div>
+<div class="bg-success p-2 text-dark bg-opacity-25">
+<center>
+    <h2><b>Operasi pengurangan pecahan pada umumnya hampir sama dengan penjumlahan pecahan, memerlukan pemahaman mengenai KPK, FPB, dan sifat operasi pengurangan. Berikut dijelaskan mengenai operasi pengurangan pecahan biasa dan pecahan campuran.</b></h2>
+    </center>
+    <p><b>A. Cara Pengurangan Pecahan Biasa (Dasar)</b></p>
+    <p>Mengurangi pecahan biasa adalah dasar dari operasi pengurangan pecahan. Secara sederhana, pengurangan pecahan dapat dilakukan ketika penyebut kedua pecahan sama.</p>
+    <br>
+    <img src="{% static 'img/pengurangan2.png' %}"  width="250px">
+    <br>
+    <p><b>Mengurangi Pecahan Biasa dengan Penyebut yang Berbeda</b></p>
+    <p>Mengurangi pecahan biasa berbeda penyebut dilakukan dengan menyamakan penyebut yang dikurangi, berikut langkah-langkahnya:</p>
+    <p><b>Contoh Soal</b></p>
+    <img src="{% static 'img/pengurangan3.png' %}"  width="250px">
+    <br>
+    <p><b>Menyamakan Penyebut</b></p>
+    <p>Menyamakan penyebut dapat dilakukan dengan menghitung KPK penyebut dari pecahan yang dihitung. Berdasarkan contoh dihitung KPK dari 4 dan 6. Jika sudah sama, maka langkah ini dapat dilewati:</p>
+    <br>
+    <img src="{% static 'img/pengurangan4.png' %}"  width="250px">
+    <br>
+    <p><b>Menghitung Pecahan Senilai</b></p>
+    <p>Cari pecahan senilai dengan penyebut KPK-nya dari masing-masing pecahan yang dikurangi. Hal ini dapat dilakukan dengan mengalikan pembilang dan penyebut sehingga diperoleh pecahan senilai yang tepat.</p>
+    <p>Tips: Bagi penyebut KPK dengan penyebut awal untuk menemukan pasangan perkalian.</p>
+    <br>
+    <img src="{% static 'img/pengurangan5.png' %}"  width="250px">
+    <br>
+    <p><b>Mengurangi dengan Pecahan Senilai</b></p>
+    <p>Saat mengurangi pecahan dengan penyebut sama, yang dikurangi hanya pembilang. Sampai di sini, pengurangan pecahan sudah selesai.</p>
+    <img src="{% static 'img/pengurangan6.png' %}"  width="250px">
+    <br>
+    <p>Catatan: Jika hasil pengurangan merupakan pecahan tidak biasa, maka nilai tersebut dapat diubah kebentuk yang lebih sederhana.</p>
+    <p><b>B. Pengurangan Pecahan Campuran</b></p>
+    <p>Pengurangan pecahan campuran secara umum hampir sama dengan mengurangi pecahan biasa. Hanya saja pada pecahan campuran, nilai bulat dan nilai pecahan dipisahkan. Kemudian, nilai pecahan dikurangi terlebih dahulu.</p>
+    <p><b>Contoh Soal Pengurangan Pecahan Campuran:</b></p>
+    <br>
+    <img src="{% static 'img/pengurangan7.png' %}"  width="250px">
+    <br>
+    <p>Berikut langkah-langkahnya:</p>
+    <p><b>Memisahkan Nilai Bulat dan Pecahan</b></p>
+    <p>Jika sudah terbiasa, maka dapat dilakukan tanpa menulis pemisahan.</p>
+    <br>
+    <img src="{% static 'img/pengurangan8.png' %}"  width="250px">
+    <br>
+    <p>Catatan: pemisahan menghasilkan operasi penjumlahan.</p>
+    <p><b>Menghitung Nilai Pecahan</b></p>
+    <p>Dengan menggunakan cara seperti mengurangi pecahan biasa di atas, diperoleh:</p>
+    <br>
+    <img src="{% static 'img/pengurangan9.png' %}"  width="250px">
+    <br>
+    <p>Catatan: untuk beberapa kasus, langkah ini dapat menghasilkan nilai negatif:</p>
+    <p><b>Menghitung Nilai Bulat</b></p>
+    <br>
+    <img src="{% static 'img/pengurangan10.png' %}"  width="250px">
+    <br>
+    <p><b>Menggabungkan Nilai</b></p>
+    <br>
+    <img src="{% static 'img/pengurangan11.png' %}"  width="250px">
+    <br>
+    <p>Itulah materi mengenai pecahan pengurangan, untuk lebih lanjut memahaminya kalian dapat menonton video di halaman video.</p>
+
+
+
+
+
+    {% endblock %}

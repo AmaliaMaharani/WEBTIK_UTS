@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="p-3 mb-2 bg-danger text-white">
+    <h1><b><center>PECAHAN DESIMAL</center></b></h1>
+</div>
+<div class="bg-success p-2 text-dark bg-opacity-10">
+<center>
+    <h3><b>Pecahan desimal adalah nilai pecahan yang bernilai seper dan bergantung konsep pembaginya dalam 10, 100, 1000 dst. Bilangan desimal dipisahkan dengan tanda koma (,) dan dibelakang koma terdapat beberapa angka-angka penyusunnya.</b></h3>
+    <p>Contoh bilangan desimal:</p>
+    <p>3,987 ; 12,8973</p>
+    <p>0,0467 ; 2013,3</p>
+    <p>Nah jika kalian sudah paham mengenai apa itu bilangan desimal, kali ini pertanyaanya adalah bagaimana operasi bilangan desimal?
+    <p>Marilah kita perhatikan penjelasan dibawah ini!</p>
+    <p><b>Cara Menjumlahkan Bilangan Desimal</b></p>
+    <p>Salah satu cara untuk menjumlahkan bilangan desimal adalah dengan meletakkan kedua bilangan desimal tersebut sejajar berdasarkan tanda koma nya.</p>
+    <p>Misalnya:</p>
+    <p>Pada bilangan 23,784 ditambahkan dengan 0,871. Tentu saja hal ini bukan perkara sulit. Bilangan 23 sebagai puluhan 2 dan satuan 3 ditambahkan dengan bilangan nol sebagai satuan.  Jadi satuan ditambahkan dengan satuan didepan koma serta bilangan di belakang koma ditambahkan masing-masing. Sehingga  hasil penjumlahan 23,784 + 0,871 = 24,655.</p>
+    <p>pecahan desimal dapat dinyatakan dalam bentuk pecahan biasa atau bilangan campuran. Sekarang silahkan kalian ambil sebuah kalkulator dan lakukan kegiatan berikut ini.</p>
+    <p>Contohnya sebagai berikut:</p>
+    <p>1. Dengan menggunakan kalkulator tentukan nilai dari 9/40</p>
+    <p>Jawab:</p>
+    <p>Maka, hasil yang kalian peroleh adalah?....</p>
+    <p>Iya benar, hasilnya adalah 0,225</p>
+    <p>Sebutkan ciri-cirinya!</p>
+    <p>Bilangan seperti 0,225 disebut sebagai bilangan pecahan desimal atau bilangan desimal dan dibaca sebagai “nol koma dua dua lima”. Sebaliknya, pecahan desimal dapat diubah bentuknya menjadi pecahan biasa. Sebagai contoh akan diubah 0,225 menjadi pecahan dalam bentuk pecahan biasa.</p>
+    <p>Penyelesaian:</p>
+    <p>= 0,225 = 225/100 >> Tulislah dalam bentuk pecahan biasa</p>
+    <p>= 225:25 / 1000:25 = 9/40 >> Sederhanakanlah dengan cara membagi pembilang dan penyebut dengan FPB-nya. FPB dari 225 dan 1000 adalah 25</p>
+    <p>Ingat!</p>
+    <p>Kamu dapat membaca 1,32 sebagai “satu tiga puluh dua perseratus”.</p>
+    <p>Jika suatu bilangan desimal lebih dari 1, maka bilangan desimal tersebut dapat ditulis sebagai suatu bilangan campuran.</p>
+    <p>2. Tulislah 1,32 sebagai suatu bilangan campuran dalam bentuk paling sederhana!</p>
+    <p>Penyelesaian:</p>
+    <p>1,32 =</p>
+    <br>
+    <img src="{% static 'img/desimal1.png' %}" width="300px">
+    <br>
+    <p>Bilangan cacah tetap ditulis terpisah dari pecahan</p>
+    <br>
+    <img src="{% static 'img/desimal2.png' %}" width="300px">
+    <br>
+    <p>Sederhanakan pecahan itu. FPB dari 100 dan 32 adalah 4.</p>
+    <p>>> Jadi, 1,32 = 18/25.</p>
+    <p>Selanjutnya, untuk menulis suatu pecahan dalam bentuk desimal, kamu dapat menulisnya dengan cara membagi pembilang dan penyebut. Perhatikan contoh berikut ini!</p>
+    <br>
+    <img src="{% static 'img/desimal3.jpg' %}" width="300px">
+    <br>
+    <p>Kamu juga dapat menggunakan kalkulator untuk membagi pembilang dengan penyebut.</p>
+    <p>3. Seorang tukang kayu ingin melobangi sebuah kayu dengan diameter tidak lebih dari 0,6 inci. Dapatkah dia menggunakan bor dengan ukuran 5/8 inci?</p>
+    <p>Penyelesaian:</p>
+    <p>Kamu dapat menggunakan sebuah kalkulator untuk membagi 5 dengan 8 yaitu dengan menekan tombol berikut:</p>
+    <br>
+    <img src="{% static 'img/desimal4.jpg' %}" width="300px">
+    <br>
+    <p>Karena 0,625 > 0,6 maka si tukang kayu tersebut tidak dapat menggunakan bor dengan ukuran 5/8 inci, karena lubanya akan terlalu besar.</p>
+    <p>Pada pecahan, jika kamu membagi pembilang dengan penyebut dan sisanya adalah nol, maka hasil baginya merupakan bilangan desimal tak berulang. Tetapi, jika hasil baginya mengulang sebuah angka atau sekelompok angka tertentu tanpa akhir, maka bilangan desimal itu disebut bilangan desimal berulang.</p>
+    <p>Sebagai contoh:</p>
+    <p>>> 0,4444… = 0,4 → garis datar yang ada di atas 4 menunjukkan bahwa angka 4 berulang.</p>
+    <p>Penerapan Bilangan Desimal</p>
+    <p>Bilangan desimal bermanfaat dalam berbagai bidang keilmuan khususnya bidang teknik/mipa dan informatika.</p>
+    <p>Pada pemrograman komputer bilangan desimal dapat dirubah ke sistem bilangan biner. Bilanga desimal dapat pula menyatakan bilangan pecahan dalam bentuk desimal.</p>
+
+
+
+{% endblock %}

@@ -1,0 +1,113 @@
+Table HOME {
+  id_home int [pk]
+  id_nama varchar
+  materi varchar
+  pecahansenilai varchar
+  pecahanpengurangan varchar
+  pecahanpenjumlahan varchar
+  pecahanoperasi varchar
+  pecahandesimal varchar
+  evaluasi varchar
+ }
+ 
+ Table MATERI {
+  id_home int [pk]
+  id_materi varchar
+  pecahansenilai varchar
+  pecahanpengurangan varchar
+  pecahanpenjumlahan varchar
+  pecahanoperasi varchar
+  pecahandesimal varchar
+ }
+ 
+ Table PECAHAN_SENILAI {
+  id_home int [pk]
+  id_materi varchar
+  pecahan_senilai varchar
+ }
+ 
+  Table PECAHAN_PENJUMLAHAN {
+  id_home int [pk]
+  id_materi varchar
+  pecahan_penjumlahan varchar
+ }
+ 
+  Table PECAHAN_PENGURANGAN {
+  id_home int [pk]
+  id_materi varchar
+  pecahan_pengurangan varchar
+ }
+
+ Table PECAHAN_OPERASI {
+  id_home int [pk]
+  id_materi varchar
+  pecahan_operasi varchar
+ }
+ 
+  Table PECAHAN_DESIMAL {
+  id_home int [pk]
+  id_materi varchar
+  pecahan_desimal varchar
+ }
+ 
+  Table EVALUASI {
+  id_home int [pk]
+  id_materi varchar
+  id_evaluasi varchar 
+  pecahan_senilai varchar
+  pecahan_penjumlahan varchar
+  pecahan_pengurangan varchar
+  pecahan_operasi varchar
+  pecahan_desimal varchar
+ }
+ 
+
+Ref: "HOME"."id_home" < "PECAHAN_DESIMAL"."pecahan_desimal"
+
+Ref: "HOME"."id_home" < "PECAHAN_SENILAI"."pecahan_senilai"
+
+Ref: "HOME"."id_home" < "EVALUASI"."id_evaluasi"
+
+Ref: "HOME"."id_home" < "MATERI"."id_materi"
+
+Ref: "HOME"."id_home" < "PECAHAN_PENGURANGAN"."pecahan_pengurangan"
+
+Ref: "HOME"."id_home" < "PECAHAN_OPERASI"."pecahan_operasi"
+
+Ref: "HOME"."id_home" < "PECAHAN_PENJUMLAHAN"."pecahan_penjumlahan"
+
+Ref: "MATERI"."pecahansenilai" < "PECAHAN_SENILAI"."id_materi"
+
+Ref: "PECAHAN_PENGURANGAN"."pecahan_pengurangan" < "MATERI"."pecahanpengurangan"
+
+Ref: "MATERI"."pecahanpenjumlahan" < "PECAHAN_PENJUMLAHAN"."pecahan_penjumlahan"
+
+Ref: "MATERI"."pecahanoperasi" < "PECAHAN_OPERASI"."pecahan_operasi"
+
+Ref: "MATERI"."pecahandesimal" < "PECAHAN_DESIMAL"."pecahan_desimal"
+
+Ref: "HOME"."pecahanpengurangan" < "PECAHAN_PENGURANGAN"."pecahan_pengurangan"
+
+Ref: "HOME"."pecahanpengurangan" < "PECAHAN_PENGURANGAN"."id_home"
+
+
+
+Ref: "HOME"."pecahansenilai" < "PECAHAN_SENILAI"."id_home"
+
+Ref: "HOME"."pecahanpenjumlahan" < "PECAHAN_PENJUMLAHAN"."id_home"
+
+Ref: "HOME"."pecahanoperasi" < "PECAHAN_OPERASI"."id_home"
+
+Ref: "HOME"."pecahandesimal" < "PECAHAN_DESIMAL"."id_home"
+
+Ref: "HOME"."evaluasi" < "EVALUASI"."id_home"
+
+Ref: "PECAHAN_SENILAI"."pecahan_senilai" < "EVALUASI"."pecahan_senilai"
+
+Ref: "PECAHAN_PENJUMLAHAN"."pecahan_penjumlahan" < "EVALUASI"."pecahan_penjumlahan"
+
+Ref: "PECAHAN_DESIMAL"."pecahan_desimal" < "EVALUASI"."pecahan_desimal"
+
+Ref: "PECAHAN_OPERASI"."pecahan_operasi" < "EVALUASI"."pecahan_operasi"
+
+Ref: "PECAHAN_PENGURANGAN"."pecahan_pengurangan" < "EVALUASI"."pecahan_pengurangan"
